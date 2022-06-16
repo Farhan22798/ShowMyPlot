@@ -1,0 +1,155 @@
+ @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
+*{
+    box-sizing: border-box;
+
+}
+
+.bada-container{
+    /* border: 2px solid red; */
+    margin-top: -150px;
+}
+
+.container{
+    border: 9px solid rgb(128, 211, 73);
+}
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: aqua;
+    align-items:center;
+    justify-content: center;
+height: 100vh;
+font-family: 'Lato','sans-serif';
+
+}
+
+.Site-container {
+    margin: 20px 0;
+}
+
+.Site-container select {
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  .container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+  }
+
+.Plot {
+    background-color: white;
+    height: 24px;
+    width: 36px;
+
+   border:1px solid black;
+   border-radius:2px;
+   
+}
+
+
+
+.Plot-conatiner{
+    margin: 20px 0;
+
+}
+
+.Plot-conatiner select{
+background-color: aquamarine;
+border:0;
+border-radius: 1px;
+font-size: 14px;
+margin-left: 10px;
+padding: 5px 15px 5px 15px;
+-moz-appearance: none;
+-webkit-appearance: none;
+appearance: none;
+
+
+}
+
+.Plot.Selected{
+    background-color: yellow;
+
+}
+
+.Plot.Book{
+    background-color:black;
+}
+
+.Plot.Booked
+{
+    background-color:green;
+}
+
+
+
+
+
+.Plot:not(.Book):hover{
+    cursor:pointer;
+    transform: scale(1.2);
+}
+
+    .showcase .Plot:not(.Book):hover{
+        cursor:default;
+        transform: scale(1);
+    }
+
+    
+    
+
+  
+
+.showcase{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display:flex;
+    justify-content: space-between;
+}
+
+.showcase li {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin: 0 10px;
+
+}
+
+.showcase li small {
+    margin-left: 10px;
+}
+
+.row{
+    display: flex;
+}
+
+.screen {
+    background-color: #fff;
+    height: 40px;
+    width: 100%;
+    transform: rotateX(-15deg);
+  
+}
+
+p.text {
+    margin: 5px 0;
+}
+
+p.text span {
+    color: #6feaf6;
+}
