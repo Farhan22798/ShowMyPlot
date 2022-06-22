@@ -4,6 +4,11 @@ const count = document.getElementById('count');
 const total = document.getElementById('total');
 const SiteSelect = document.getElementById('Site');
 
+
+
+
+
+
 populateUI();
 let ticketPrice = +SiteSelect.value;
 
@@ -67,3 +72,5 @@ container.addEventListener('click', (e) => {
 });
 
  updateSelectedCount();
+
+ 

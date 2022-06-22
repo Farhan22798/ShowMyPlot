@@ -8,6 +8,12 @@
     <title>Show My Plot</title>
 </head>
 <body>
+
+
+
+
+
+    
   <h1 style="color:rgb(255, 238, 0);font-size:69px;">SHOW MY PLOT</h1>
        
  <div id="test" style="color:#fff ; margin-bottom:100px; height:100px;">
@@ -17,16 +23,16 @@
     <div class="Plot-conatiner">
     <label>Select Site:</label> 
     <select id="Site">
-        <option value="108000">Diamond City (Rs,1,08,000/-)</option>
-        <option value="144000">VIP Colony (Rs,1,44,000/-)</option>
-        <option value="180000">Smart City (Rs,1,80,000/-)</option>
+        <option value="108000">Smart City Back Side (Rs,1,08,000/-)</option>
+        <option value="144000">Smart City Middle Row (Rs,1,44,000/-)</option>
+        <option value="180000">Smart City Front Row (Rs,1,80,000/-)</option>
     </select>
 </div>
 
     <ul class="showcase">
         <li>
             <div class="Plot"></div>
-            <small>N/A</small>
+            <small>Vacant</small>
         </li>
 
     
@@ -52,12 +58,14 @@
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>
+            <div class="Plot Road"></div>
             <div class="Plot"></div>
             <div class="Plot Booked"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>
+            <div class="Plot Road"></div>
+
+            
             
         </div>
         <div class="row">
@@ -65,12 +73,12 @@
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>
+            <div class="Plot Road"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot Booked"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>
+            <div class="Plot Road"></div>
         </div>
         <br></br>
           
@@ -85,12 +93,12 @@
             <div class="Plot Booked"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>
+            <div class="Plot Road"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>
+            <div class="Plot Road"></div>
         </div>
 
         <div class="row">
@@ -98,12 +106,12 @@
             <div class="Plot"></div>
             <div class="Plot Booked"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>
+            <div class="Plot Road"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>
+            <div class="Plot Road"></div>
         </div>
         <br></br>
         <div class="row">
@@ -111,12 +119,12 @@
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>
+            <div class="Plot Road"></div>
             <div class="Plot"></div>
             <div class="Plot Booked"></div>
             <div class="Plot Booked"></div>
             <div class="Plot Booked"></div>
-            <div class="Plot Book"></div>
+            <div class="Plot Road"></div>
         </div>
 
         <div class="row">
@@ -124,12 +132,12 @@
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>
+            <div class="Plot Road"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>
+            <div class="Plot Road"></div>
         </div>
         <br></br>
         <div class="row">
@@ -137,24 +145,24 @@
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>
+            <div class="Plot Road"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>
+            <div class="Plot Road"></div>
         </div>
         <div class="row">
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>
+            <div class="Plot Road"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>    
+            <div class="Plot Road"></div>    
         </div>
         <br></br>
         <div class="row">
@@ -162,12 +170,12 @@
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>
+            <div class="Plot Road"></div>
             <div class="Plot"></div>
             <div class="Plot Booked"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>   
+            <div class="Plot Road"></div>   
         </div>
 
         <div class="row">
@@ -175,22 +183,58 @@
             <div class="Plot Booked"></div>
             <div class="Plot Booked"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>
+            <div class="Plot Road"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
             <div class="Plot"></div>
-            <div class="Plot Book"></div>        
+            <div class="Plot Road"></div>        
         </div>
+
         
-    
 </div>
 </div>
 
-    <p class="text">
-        You have slected <span id="count">0</span> Plots of which total cost is ₹<span id=""total">0</span>
-    </p>
- 
+<button type="submit" class="btn" onclick="openPopup()">Book Now</button>
+<div class="popup" id="popup">
+    <img src="Tick.png">
+    <h2>Please fill the details</h2>
+
+
+
+    <form action="/action_page.php">
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your Name..">
+    
+        <label for="tel">Contact No.</label>
+        <input type="text" id="tel" name="Contact No." placeholder="Your Contact No...">
+    
+        <label for="Interested in">Interested in</label>
+        <select id="Interested in" name="Interested in">
+          <option value="Cash">Cash</option>
+          <option value="EMI">EMI</option>
+        </select>
+    
+    
+    
+        
+      </form>
+
+    <button type="button" onclick="closePopup()">Submit</button>
+</div>
+
+<script>
+    
+let popup = document.getElementById("popup");
+
+function openPopup(){
+  popup.classList.add("open-popup");
+}
+  function closePopup(){
+    popup.classList.remove("open-popup");
+}
+</script>
+    
     <script src="script.js"></script>
 </body>
 </html> 

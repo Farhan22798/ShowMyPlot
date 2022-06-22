@@ -15,6 +15,7 @@
     border: 9px solid rgb(128, 211, 73);
 }
 
+
 body{
     background-color: black;
     display: flex;
@@ -55,8 +56,12 @@ font-family: 'Lato','sans-serif';
 
    border:1px solid black;
    border-radius:2px;
-   
 }
+
+  
+   
+   
+
 
 
 
@@ -84,7 +89,7 @@ appearance: none;
 
 }
 
-.Plot.Book{
+.Plot.Road{
     background-color:black;
 }
 
@@ -97,12 +102,12 @@ appearance: none;
 
 
 
-.Plot:not(.Book):hover{
+.Plot:not(.Road):hover{
     cursor:pointer;
     transform: scale(1.2);
 }
 
-    .showcase .Plot:not(.Book):hover{
+    .showcase .Plot:not(.Road):hover{
         cursor:default;
         transform: scale(1);
     }
@@ -153,3 +158,69 @@ p.text {
 p.text span {
     color: #6feaf6;
 }
+
+
+.btn {
+    background-color: rgb(219, 246, 17);
+    border: none;
+    color: rgb(19, 18, 18);
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 30px;
+  }
+  
+  .btn:hover {
+    background-color: green;
+  }
+
+  .popup{
+      width: 400px;
+      background: #fff;
+      border-radius: 6px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%)scale(0.1);
+      text-align: center;
+      padding: 0 30px 30px;
+      color: #333;
+      visibility: hidden;
+      transition: transform 0.4s, top 0.4s;
+  }
+
+  .open-popup{
+      visibility: visible;
+      top: 50%;
+      transform: translate(-50%, -50%)scale(1);
+  }
+
+  .popup img{
+      width: 100px;
+      margin-top: -50px;
+      border-radius: 50%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .popup h2{
+        font-size: 38px;
+        font-weight: 500;
+    margin: 30px 0 10px;
+
+    }
+
+    .popup button{
+        width: 100%;
+        margin-top: 50px;
+        padding: 10px 0;
+        background: #6fd649;
+        color: #fff;
+        border: 0;
+        outline: none;
+        font-size: 18px;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    }
